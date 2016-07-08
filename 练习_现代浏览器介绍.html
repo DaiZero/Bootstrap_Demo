@@ -53,6 +53,11 @@
     color: #2a6496;
     margin-top: 120px;
   }
+.feature-heading .text-muted
+  {
+    font-size: 28px;
+    /*color: #999;*/
+  }
   </style>
     </head>
     <body>
@@ -60,28 +65,30 @@
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-navbar" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Brand</a>
+        <a class="navbar-brand" href="#">DZero</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse" id="demo-navbar">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">综述</a></li>
           <li><a href="#">简述</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">特点 <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">jian</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#tab-chrome">Chrome</a></li>
+              <li><a href="#tab-firefox">Firefox</a></li>
+              <li><a href="#tab-ie">IE</a></li>
+              <li><a href="#tab-opera">Opera</a></li>
+              <li><a href="#tab-safari">Safari</a></li>
+              <!-- <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li> -->
             </ul>
           </li>
           <li><a href="#" data-toggle="modal" data-target="#about">关于</a></li>
@@ -107,7 +114,7 @@
       <div class="item active">
         <img src="images/chrome-big.jpg" alt="1">
         <div class="carousel-caption">
-          <h1>chrome</h1>
+          <h1>Chrome</h1>
            <p>chromechromechromechromechromechromechrome</p>
            <p> <a href="#" class="btn btn-lg active btn-primary" role="button" target="_blank">点击下载</a></p>
         </div>
@@ -115,7 +122,7 @@
       <div class="item">
         <img src="images/firefox-big.jpg" alt="2 slide">
         <div class="carousel-caption">
-          <h1>firefox</h1>
+          <h1>Firefox</h1>
            <p>firefoxfirefoxfirefoxfirefoxfirefoxfirefox</p>
 
            <p> <a href="#" class="btn btn-lg active btn-primary" role="button" target="_blank">点击下载</a></p>
@@ -124,7 +131,7 @@
      <div class="item">
         <img src="images/ie-big.jpg" alt="3 slide">
         <div class="carousel-caption">
-          <h1>ie</h1>
+          <h1>IE</h1>
            <p>ieieieieieieieieieieieieieieieieieieieieie</p>
            <p> <a href="#" class="btn btn-lg active btn-primary" role="button" target="_blank">点击下载</a></p>
         </div>
@@ -132,7 +139,7 @@
      <div class="item">
         <img src="images/opera-big.jpg" alt="4 slide">
         <div class="carousel-caption">
-          <h1>opera</h1>
+          <h1>Opera</h1>
            <p>operaoperaoperaoperaoperaopera</p>
            <p> <a href="#" class="btn btn-lg active btn-primary" role="button" target="_blank">点击下载</a></p>
         </div>
@@ -140,7 +147,7 @@
      <div class="item">
         <img src="images/safari-big.jpg" alt="5 slide">
         <div class="carousel-caption">
-          <h1>safari</h1>
+          <h1>Safari</h1>
            <p>safarisafarisafarisafarisafarisafari</p>
            <p> <a href="#" class="btn btn-lg active btn-primary" role="button" target="_blank">点击下载</a></p>
         </div>
@@ -160,20 +167,20 @@
     <div class="row">
       <div class="col-md-4">
         <img src="images/chrome-logo-small.jpg" alt="chrome" class="img-circle">
-        <h2>chrome</h2>
+        <h2>Chrome</h2>
            <p>chromechromechromechromechromechromechrome</p>
            <p> <a href="#" class="btn btn-default" role="button" target="_blank">点击下载</a></p>
       </div>
       <div class="col-md-4">
         <img src="images/firefox-logo-small.jpg" alt="firefox" class="img-circle">
-        <h2>firefox</h2>
+        <h2>Firefox</h2>
            <p>firefoxfirefoxfirefoxfirefoxfirefoxfirefox</p>
 
            <p> <a href="#" class="btn btn-default" role="button" target="_blank">点击下载</a></p>
       </div>
       <div class="col-md-4">
         <img src="images/safari-logo-small.jpg" alt="safari" class="img-circle">
-         <h2>safari</h2>
+         <h2>Safari</h2>
            <p>safarisafarisafarisafarisafarisafari</p>
            <p> <a href="#" class="btn btn-default" role="button" target="_blank">点击下载</a></p>
       </div>
@@ -181,7 +188,7 @@
     <hr class="diviver">
     <!-- 标签页 -->
   <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
+  <ul class="nav nav-tabs" role="tablist" id="tab-list">
     <li role="presentation" class="active"><a href="#tab-chrome" aria-controls="chrome" role="tab" data-toggle="tab">Chrome</a></li>
     <li role="presentation"><a href="#tab-firefox" aria-controls="firefox" role="tab" data-toggle="tab">Firefox</a></li>
     <li role="presentation"><a href="#tab-ie" aria-controls="ie" role="tab" data-toggle="tab">IE</a></li>
@@ -214,24 +221,25 @@
     </div>
     <div role="tabpanel" class="tab-pane" id="tab-ie">
        <div class="row feature">
- <div class="col-md-7">
-        <h2 class="feature-heading">IE <span class="text-muted">微软公司</span></h2>
+        <div class="col-md-7">
+          <h2 class="feature-heading">IE <span class="text-muted">微软公司</span></h2>
            <p class="lead">ieieieieieieieieieieie</p>
+        </div>
+        <div class="col-md-5">
+          <img src="images/ie-logo.jpg" alt="IE" class="img-responsive">
+        </div>
       </div>
-      <div class="col-md-5">
-        <img src="images/ie-logo.jpg" alt="IE" class="img-responsive">
-      </div></div>
     </div>
     <div role="tabpanel" class="tab-pane" id="tab-opera">
-       <div class="row feature">
+      <div class="row feature">
        <div class="col-md-5">
-        <img src="images/opera-logo.jpg" alt="opera" class="img-responsive">
+         <img src="images/opera-logo.jpg" alt="opera" class="img-responsive">
+        </div>
+        <div class="col-md-7">
+         <h2 class="feature-heading">Opera <span class="text-muted">欧朋公司</span></h2>
+         <p class="lead">operaoperaoperaoperaoperaoperaoperaopera</p>
+        </div>
       </div>
- <div class="col-md-7">
-        <h2 class="feature-heading">Opera <span class="text-muted">欧朋公司</span></h2>
-           <p class="lead">operaoperaoperaoperaoperaoperaoperaopera</p>
-      </div></div>
-     
     </div>
     <div role="tabpanel" class="tab-pane" id="tab-safari">
        <div class="row feature">
@@ -244,11 +252,16 @@
       </div></div>
     </div>
   </div>
-    <hr class="diviver">
     </div>
+      <hr class="diviver">
     <footer>
-      
+      <p>Copyright &copy; <a href="https://github.com/DaiZero/">DZero</a> |
+      <a href="http://www.cnblogs.com/zerodai/" target="_blank">DZero's Blog</a>
+    </p>
+    <p class="pull-right"><a href="#top">回到顶部</a></p><!-- pull-right样式右对齐 -->
     </footer>
+
+
     <!-- 弹出框 -->
 <div class="modal fade" id="about">
   <div class="modal-dialog">
@@ -258,7 +271,7 @@
         <h4 class="modal-title">关于</h4>
       </div>
       <div class="modal-body">
-        <p>One fine body&hellip;</p>
+        <p>本Demo是根据慕课网教程制作的，基于Bootstrap&hellip;</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
@@ -266,18 +279,28 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-<div class="copyright">
+<!-- <div class="copyright">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <span>Copyright &copy; <a href="https://github.com/DaiZero/">Dzero</a></span> |
-                <span><a href="http://www.cnblogs.com/zerodai/" target="_blank">Dzero's Blog</a></span>
+                <span>Copyright &copy; <a href="https://github.com/DaiZero/">DZero</a></span> |
+                <span><a href="http://www.cnblogs.com/zerodai/" target="_blank">DZero's Blog</a></span>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
       <script src="js/jquery-1.11.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        $("#demo-navbar .dropdown-menu a").click(function()
+          {
+            var href=$(this).attr("href");
+            $('#tab-list a[href="'+href+'"]').tab('show');
+          }
+          );
+      });
+      </script>
     </body>
   </html>
