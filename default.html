@@ -13,6 +13,7 @@
      body
     {
       padding-top: 50px;
+      padding-bottom: 50px;
     }
   .carousel
   {
@@ -41,6 +42,16 @@
   hr .diviver
   {
     margin: 40px;
+  }
+  .feature
+  {
+    padding: 30px 0;
+  }
+  .feature-heading
+  {
+    font-size: 50px;
+    color: #2a6496;
+    margin-top: 120px;
   }
   </style>
     </head>
@@ -73,7 +84,7 @@
               <li><a href="#">Separated link</a></li>
             </ul>
           </li>
-          <li><a href="#">关于</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#about">关于</a></li>
           
         </ul>
       
@@ -168,10 +179,105 @@
       </div>
     </div>
     <hr class="diviver">
+    <!-- 标签页 -->
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#tab-chrome" aria-controls="chrome" role="tab" data-toggle="tab">Chrome</a></li>
+    <li role="presentation"><a href="#tab-firefox" aria-controls="firefox" role="tab" data-toggle="tab">Firefox</a></li>
+    <li role="presentation"><a href="#tab-ie" aria-controls="ie" role="tab" data-toggle="tab">IE</a></li>
+    <li role="presentation"><a href="#tab-opera" aria-controls="opera" role="tab" data-toggle="tab">Opera</a></li>
+    <li role="presentation"><a href="#tab-safari" aria-controls="safari" role="tab" data-toggle="tab">Safari</a></li>
+  </ul>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="tab-chrome">
+      <div class="row feature">
+    <div class="col-md-7">
+        <h2 class="feature-heading">Chrome <span class="text-muted">谷歌公司</span></h2>
+           <p class="lead">chromechromechromechromechromechromechrome</p>
+      </div>
+      <div class="col-md-5">
+        <img src="images/chrome-logo.jpg" alt="chrome" class="img-responsive">
+      </div>
+      </div>
     </div>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <div role="tabpanel" class="tab-pane" id="tab-firefox">
+       <div class="row feature">
+       <div class="col-md-5">
+        <img src="images/firefox-logo.jpg" alt="firefox" class="img-responsive">
+      </div>
+    <div class="col-md-7">
+        <h2 class="feature-heading">Firefox <span class="text-muted">火狐公司</span></h2>
+           <p class="lead">firefoxfirefoxfirefoxfirefoxfirefoxfirefoxfirefoxfirefox</p>
+      </div></div>
+     
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tab-ie">
+       <div class="row feature">
+ <div class="col-md-7">
+        <h2 class="feature-heading">IE <span class="text-muted">微软公司</span></h2>
+           <p class="lead">ieieieieieieieieieieie</p>
+      </div>
+      <div class="col-md-5">
+        <img src="images/ie-logo.jpg" alt="IE" class="img-responsive">
+      </div></div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tab-opera">
+       <div class="row feature">
+       <div class="col-md-5">
+        <img src="images/opera-logo.jpg" alt="opera" class="img-responsive">
+      </div>
+ <div class="col-md-7">
+        <h2 class="feature-heading">Opera <span class="text-muted">欧朋公司</span></h2>
+           <p class="lead">operaoperaoperaoperaoperaoperaoperaopera</p>
+      </div></div>
+     
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tab-safari">
+       <div class="row feature">
+ <div class="col-md-7">
+        <h2 class="feature-heading">Safari <span class="text-muted">苹果公司</span></h2>
+           <p class="lead">safarisafarisafarisafarisafari</p>
+      </div>
+      <div class="col-md-5">
+        <img src="images/safari-logo.jpg" alt="safari" class="img-responsive">
+      </div></div>
+    </div>
+  </div>
+    <hr class="diviver">
+    </div>
+    <footer>
+      
+    </footer>
+    <!-- 弹出框 -->
+<div class="modal fade" id="about">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">关于</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <span>Copyright &copy; <a href="https://github.com/DaiZero/">Dzero</a></span> |
+                <span><a href="http://www.cnblogs.com/zerodai/" target="_blank">Dzero's Blog</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
       <script src="js/jquery-1.11.1.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
     </body>
   </html>
